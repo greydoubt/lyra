@@ -208,10 +208,6 @@ We don't sell software.
 
 We provide time saved and impact achieved.
 
-CEO: Ben Valk
-CSO: Sean McWillie
-
-
 {global_tools_desc}
 """
 
