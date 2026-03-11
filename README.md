@@ -2,7 +2,7 @@
 generic LLM call
 
 
-This is an as-is Python AWS Lambda OpenAI call. It relies on API Gateway for auth. It can be configured with a zero-trust or full-retention modality, depending on data needs. All calls are assumed to be a REST "ticket" that with binary encoded messages.
+This is an as-is Python AWS Lambda OpenAI call. It relies on API Gateway for auth. It can be configured with a zero-trust or full-retention modality, depending on data needs. All calls are assumed to consist of a REST "ticket" 🎫 containing a binary encoded message
 
 It can also interface with anything using generic REST calls such as:
 
