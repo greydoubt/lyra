@@ -16,6 +16,24 @@ curl -v -X POST \
 
 RESTFul API calls live in NP-Space whereas the stream once locked-in, will run in Linear (P-Time) 
 
+This does not mean they are secure, only that the schematic takes a long time to crack open, whereas encoding makes the system expensive to crack, and encryption makes the system hazardouse to crack due to the unknown payload. anything once it leaves the sender (your machine) should be assumed to be tampered with, which is what LLMs do: modify a signal and bounce it back. POST requests are used to send data to a server to create or update a resource. Unlike GET requests, which retrieve data, POST requests submit data for processing.  POST requests are not idempotent, meaning sending the same request multiple times can lead to multiple records being created. 
+
+<img width="1359" height="671" alt="api flow example" src="https://github.com/user-attachments/assets/ca16fe28-dd8f-424d-8c86-306f2874ee85" />
+
+POST /api/v1/setlattice HTTP/1.1
+Host: <REMOTE_URI>
+Content-Type: application/json
+
+{
+  "name": "Set Cover Lettuce Product",
+  "price": 29.99,
+  "description": "A brand new product from set"
+}
+
+Unlike POST requests, which can create new resources, PUT requests are meant for replacing or updating the data of an already existing resource. When a PUT request is sent, it instructs the server to overwrite the existing resource with the new data provided.
+
+This is for when you want to change Key-Value storage such as memory in a dataplane or modify an in-flight engram in a virtual machine
+
 Another useful RESTFul API Schema is the Stripe Schema for Payment:
 ```
 curl https://api.<PAYMENT_RAIL_URI?.#com/v1/customers \
