@@ -14,6 +14,26 @@ curl -v -X POST \
 -d '{"body": "{"id": 152948599,"version_id": 1856687097,"text": "bWFya2V0IGVudHJ5IGZvciBFdXJvcGVhbiBkYWlyeSBwcm9kdWNlciBpbiBVQUU=","timestamp": "1702307960","sender": "user","metadata": {"conversationTopic": "TmV3IENoYXQ=","tool": ["Y2hhdGJvdA==","aW5zdHJ1Y3Rpb24=","dG9uZQ==","bGVuZ3Ro"],"reference": ["Z3B0My41LXR1cmJv","cHJvZmVzc2lvbmFs","cHJvZmVzc2lvbmFs","c2hvcnQ="],"token_cost": 2138,"rating": 1}}"}'
 ```
 
+RESTFul API calls live in NP-Space whereas the stream once locked-in, will run in Linear (P-Time) 
+
+Another useful RESTFul API Schema is the Stripe Schema for Payment:
+```
+curl https://api.<PAYMENT_RAIL_URI?.#com/v1/customers \
+  -u "sk_test_bc1q63llmqp5umkzrgpumjfudh6fwgyf97c46ngc9f:" \
+  -d "name=Kim Kardasheva Net Yaroze Roze" \
+  --data-urlencode "email=kimkardashian@utexas.edu"
+```
+
+So instead of an /etc/defaults file with your sk_test key, if you have an HTTP proxy managing secrets you can do this:
+
+```
+curl https://api.<PAYMENT_RAIL_URI?.#com/v1/customers \
+  -d "name=Satoshi Nakamoto" \
+  --data-urlencode "email=kimkardashian@utexas.edu"
+```
+
+
+
 
 
 
