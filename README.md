@@ -1,6 +1,14 @@
 # lyra
 generic LLM call
 
+This specification uses the standard XNU Message Structure:
+```
+  unit8_t  endpoint
+  unit8_t  messageTag;
+  unit8_t  opCode;
+  unit8_t  parameter;
+  unit32_t  data;
+```
 
 This is an as-is Python AWS-compatible Lambda OpenAI-specification call that you can use anywhere else or even for a non-AI app such as a reminder or To-Do app. It is just a post-response (signal-echo) system where anything or a set of a bunch of whatever can be the remote back-end. This stack relies on API Gateway for auth. It can be configured with a zero-trust or full-retention modality, depending on data needs. All calls are assumed to consist of a REST "ticket" 🎫 containing a binary encoded message. It can be run serverless or dedicated or local or cloud. License keys are on you.
 
