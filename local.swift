@@ -5,10 +5,9 @@ guard model.availability == .available else { return }
 
 let session = LanguageModelSession {
   """
-  Provide a brutalist, information-dense summary in Markdown format.
-  - Use **bold** for key concepts.
-  - Use bullet points for facts.
-  - No fluff. Just facts.
+  Summarise the following:
+The matter power spectrum, denoted as P(k)P(k), quantifies the statistical distribution of density fluctuations in the universe as a function of scale, characterized by the wavenumber kk. It is defined as the Fourier transform of the two-point correlation function of the matter density contrast
+
   """
 }
 
